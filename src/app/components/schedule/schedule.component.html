@@ -1,0 +1,55 @@
+<mat-card >
+    <div class="loading-shade" *ngIf="loadingInProgress">
+        <mat-spinner *ngIf="loadingInProgress" class="spinner"></mat-spinner>
+    </div>
+    
+    <mat-grid-list cols="3">
+        <mat-grid-tile>
+            <span class="material-icons md-18 md-dark-blue back">arrow_back</span>
+            <div class="person-label">
+                {{personName}}
+            </div>
+            <div class="duration-label">
+                {{duration}} Minutes Meeting
+            </div>
+            <div >
+                <span class="material-icons md-24 md-light-gray">access_time_filled</span>
+                <span class="access-time">{{duration}} min</span> 
+            </div>
+            <div class="scheduled-container" *ngIf="selectedScheduleLabel !== ''">
+                <span class="scheduled-label">Scheduled Interview at:</span>
+                <span class="scheduled-date-label">{{selectedScheduleLabel}}</span>
+            </div>            
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <div class="calendar-container">
+                <div class="select-date-label">
+                    Select a Date & Time
+                </div>
+                <mat-calendar 
+                    [selected]="selectedDate" 
+                    [startAt]="startAt"
+                    [minDate]="minDate" 
+                    [maxDate]="maxDate" 
+                    [dateFilter]="myDateFilter"
+                    (selectedChange)="onSelect($event)">
+                </mat-calendar>
+            </div>
+        </mat-grid-tile>
+
+        <mat-grid-tile>
+            <div class="time-container">
+                <div class="selected-date-label">{{dayAndDate}}</div>
+                <mat-card class="times-label">
+                    times you're available
+                </mat-card>
+                <div class="times-card-container">
+                    <div *ngFor="let item of items; let i = index">
+                        <mat-card [class.card-selected]="item.isSelected" (click)="setHour(item)" class="times-card" >{{item.scheduleDateTimeLabel}}</mat-card>
+                    </div>
+                </div>
+            </div>
+        </mat-grid-tile>
+    
+    </mat-grid-list>
+</mat-card>

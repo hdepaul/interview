@@ -1,0 +1,127 @@
+@import "../../../variables.scss";
+
+.background {
+    position: fixed;
+    height: 100%;
+    background-color: $saj-white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.loading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    
+    .inner-loading-container {
+        padding-top: 100px;
+        position: relative;
+    }
+    ::ng-deep svg {
+        padding: 5px;
+    }
+}
+
+.logo {
+    display: block;
+    padding-top: 32px;
+    margin-bottom: 5px;
+    padding-left: 32px;
+    height: 40px;
+    color: $snag-blurple-og;
+}
+
+.circular-loader {
+    animation: rotate 2s linear infinite;
+    height: 100%;
+    transform-origin: center center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+}
+
+.loader-path {
+    stroke-dasharray: 150,200;
+    stroke-dashoffset: -10;
+    stroke: $snag-blurple-og;
+    animation: dash 1.5s ease-in-out infinite;
+}
+
+.text {
+    text-align: center; 
+    font-family: "Nunito"; 
+}
+
+.message {
+    font-size: 28px;
+    font-weight: 600;
+    color: $snag-blurple-og;
+    width: 537px;
+    overflow-wrap: normal;
+}
+
+.joke-question{
+    padding-top: 100px;
+    color: $snag-gray-80;
+    font-size: 22px; 
+}
+
+.joke-answer {
+    color:$snag-gray-80; 
+    font-size: 22px;
+    font-family: "Nunito Light";
+    font-style: italic;
+}
+
+.jokes-footer { 
+    text-align: center;    
+    bottom: 25px; 
+    width: 100%;
+    position: fixed;
+}  
+
+@media (min-height: 577px) {
+    .loading-container {
+        height: calc(100% - 77px);
+
+        .inner-loading-container {
+            text-align: center;
+            padding-bottom: 75px;
+            padding-top: 0px;
+        }
+    }
+}
+
+@media only screen and (max-width: 758px) {
+    .message {
+        width: 360px;
+        text-align: center;
+    }
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+  
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1,200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89,200;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 89,200;
+        stroke-dashoffset: -124;
+    }
+}
+  

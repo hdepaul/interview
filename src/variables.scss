@@ -1,0 +1,70 @@
+@import "media-queries.scss";
+
+$saj-orange: #f76f00;
+$saj-white: #ffffff;
+$saj-green: #40a85f;
+$saj-red: #b13c3d;
+$saj-dark-9: #999999;
+$saj-dark-4: #444444;
+$saj-dark-3: #333333;
+$saj-dark-2: #222222;
+$saj-border: #d8d8d8;
+$saj-light-grey: #767676;
+$saj-light-gray: $saj-light-grey;
+$saj-modal-overlay: #333336;
+$saj-secondary-btn: #666666;
+$saj-dark-highlight-3: #373737;
+
+$saj-green: #65be75;
+
+// True Blurple
+$snag-blurple-og: #262262;
+
+// Blurple Variants
+$snag-blurple-1: #2d2873;
+$snag-blurple-2: #4c2d79;
+$snag-blurple-3: #231E56;
+$snag-blurple-4: #423981;
+
+$snag-pink: #FF44A0;
+$snag-alert-pink: #ff4081;
+$snag-magenta: #E81945;
+$snag-green: #2EA718;
+$snag-orange-med: #FF9F30;
+$snag-orange: #A95718;
+$snag-link-blue: #4D64F8;
+$snag-light-grey: #d3d3d4;
+$snag-grey: #7a7a7c;
+$snag-functional-light-blue: #8eabff;
+
+// Snag gray
+$snag-darker-gray: #212124;
+$snag-dark-gray: #292836;
+$snag-gray-90: #3E3D4A;
+$snag-gray-80: #54535E;
+$snag-gray-70: #696872;
+$snag-gray-60: #7F7E86;
+$snag-gray-50: #94939A;
+$snag-gray-40: #A9A9AF;
+$snag-gray-30: #BEBEC2;
+$snag-gray-20: #D4D4D7;
+$snag-gray-15: #DFDFE1;
+$snag-gray-10: #E9E9EA;
+$snag-gray-05: #F4F4F5;
+
+$compliance-red: #a94442;
+$compliance-gray: #eeeeee;
+$compliance-dark-gray: #e8e8e8;
+$compliance-blue: #0574ba;
+$compliance-black: #212124;
+
+$list-item-blue: #0076bb;
+
+$muted-red: #fff4f4;
+$error-border-red: #ff7f81;
+$error-x-red: #d14d4d;
+
+$side-nav-vertical-offset: 103px;
+$business-icon-view-min-width: 576px;
+
+$snag-dark-blue: #01749C;

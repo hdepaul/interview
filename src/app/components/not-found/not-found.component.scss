@@ -1,0 +1,79 @@
+@import "../../../variables.scss";
+
+.background {
+    position: fixed;
+    height: 100%;
+    background-color: $saj-white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.logo {
+    display: block;
+    margin-top: 32px;
+    margin-bottom: 5px;
+    padding-left: 32px;
+    height: 40px;
+    color: $snag-blurple-og;
+}
+
+h1 {
+    font-family: "Zilla Slab";
+    font-size: 58px;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+h1, h3, p{
+    text-align: center;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    flex: 1;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-height: 577px) {
+    .centered {
+        height: calc(100% - 77px);
+    }
+    
+    .content {
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 500px;
+        width: 510px;
+        margin: 0 auto;
+    }
+}
+
+.error-logo {
+    width: 100%;
+    height: 100%;
+}
+
+.error-header {
+    // font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+p {
+    font-size: 16px;
+}
+
+a.btn {
+    margin-bottom: 19px;
+}

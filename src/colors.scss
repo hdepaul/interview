@@ -1,0 +1,139 @@
+/* ==========================================================================
+   SNAG COLORS
+   ========================================================================== */
+
+/* CORE COLORS
+   ========================================================================== */
+
+   $snag-blurple:#262262; 
+   $snag-white: #ffffff; 
+   
+   /* ACCENT COLORS
+      ========================================================================== */
+   
+   $snag-flo-green-light: #C4FCBA;
+   $snag-flo-yellow-light: #FBFCBA; 
+   $snag-flo-blue-light: #A5FAFA; 
+   $snag-flo-pink-light: #FF9DCD; 
+   $snag-flo-orange-light: #FFD6B6; 
+   
+   $snag-flo-green-med: #6BF752;
+   $snag-flo-yellow-med: #F4F752; 
+   $snag-flo-blue-med: #52F7F7; 
+   $snag-flo-pink-med: #FF44A0; 
+   $snag-flo-orange-med: #FF9F30; 
+   
+   $snag-flo-green-dark: #2EA718;
+   $snag-flo-yellow-dark: #A7AA17; 
+   $snag-flo-blue-dark: #109D9D; 
+   $snag-flo-pink-dark: #A8195F; 
+   $snag-flo-orange-dark: #A95718; 
+   
+   /* INTERFACE COLORS 
+      ========================================================================== */
+   
+   $snag-gray: #292836; 
+   $snag-gray-90: #3E3D4A; 
+   $snag-gray-80: #54535E; 
+   $snag-gray-70: #696872; 
+   $snag-gray-60: #7F7E86; 
+   $snag-gray-50: #94939A; 
+   $snag-gray-40: #A9A9AF; 
+   $snag-gray-30: #BEBEC2; 
+   $snag-gray-20: #D4D4D7; 
+   $snag-gray-15: #DFDFE1;
+   $snag-gray-10: #E9E9EA; 
+   $snag-gray-05: #F4F4F5;
+   
+   /* FUNCTIONAL COLORS
+      ========================================================================== */
+   
+   $snag-alert-red: #E81945; 
+   $snag-success-green: #148900; 
+   $snag-warning-yellow: #F6DF1B; 
+   $snag-action-periwinkle: #4D64F8; 
+   $snag-action-periwinkle-light: #8AA9FF;
+   $snag-action-periwinkle-extralight: #EDEFFE;
+   $snag-action-periwinkle-dark: #4256CE;
+   $snag-action-pink: $snag-flo-pink-med;
+   $snag-action-pink-dark: #d93a88;
+   $snag-accessibility-blue: #3F52Cc;
+   $snag-accessibility-red: #D91740;
+   
+   /* ELEMENTS
+      ========================================================================== */
+   
+   $snag-link-color: $snag-action-periwinkle;
+   $snag-link-hover-color: $snag-action-periwinkle;
+   $snag-link-hover-background-color: $snag-flo-yellow-light;
+   
+   
+   // legacy stuff, reassigning for now
+   
+   $saj-white: $snag-white;
+   $saj-link-color: $snag-link-color;
+   $saj-link-hover-color: $snag-link-hover-color;
+   $saj-functional-green: $snag-success-green;
+   $saj-functional-yellow: $snag-warning-yellow;
+   $saj-functional-red: $snag-alert-red;
+   $saj-functional-blue: $snag-action-periwinkle;
+   
+   $saj-black: $snag-gray;
+   $saj-med-grey: $snag-gray-70;
+   $saj-muted-grey: $snag-gray-40; 
+   $saj-functional-grey: $snag-gray-20;
+   $saj-rule-color: $snag-gray-20;
+   $saj-sage: $snag-gray-15;
+   $saj-warm-grey: $snag-gray-10;
+   $saj-light-grey: $snag-gray-05;
+   $saj-paper: $snag-gray-05;
+   
+   /* Pastels
+      ========================================================================== */
+   
+   $saj-pastel-salmon: #FF9FA1;
+   $saj-pastel-orange: #FFAD71;
+   $saj-pastel-gold: #FFC981;
+   $saj-pastel-blue-violette: #A2AEFF;
+   $saj-pastel-mint: #7AF3C1;
+   $saj-pastel-magenta: #FEA2E1;
+   $saj-pastel-teal: #6BE8EE;
+   $saj-pastel-blue: #A2CDFF;
+   $saj-pastel-yellow: #FBE78B;
+   $saj-pastel-pine: #DFE87B;
+   $saj-pastel-green: #B3F077;
+   $saj-pastel-violette: #E7A2FC;
+   
+   
+   /* Scheduling Colors
+      ========================================================================== */
+   
+   $saj-schedule-salmon: $saj-pastel-salmon;
+   $saj-schedule-orange: $saj-pastel-orange;
+   $saj-schedule-gold: $saj-pastel-gold;
+   $saj-schedule-blue-violet: $saj-pastel-blue-violette;
+   $saj-schedule-mint: $saj-pastel-mint;
+   $saj-schedule-magenta: $saj-pastel-magenta;
+   $saj-schedule-teal: $saj-pastel-teal;
+   $saj-schedule-blue: $saj-pastel-blue;
+   $saj-schedule-yellow: $saj-pastel-yellow;
+   $saj-schedule-pine: $saj-pastel-pine;
+   $saj-schedule-green: $saj-pastel-green;
+   $saj-schedule-violet: $saj-pastel-violette;
+   
+   /* Scheduling Colors - Unpublished Shifts
+      ========================================================================== */
+   
+   $saj-pastel-salmon-unpub: #fff4f4;
+   $saj-pastel-orange-unpub: #fff1e7;
+   $saj-pastel-gold-unpub: #fff6e9;
+   $saj-pastel-blue-violette-unpub: #eef0ff;
+   $saj-pastel-mint-unpub: #e8fdf4;
+   $saj-pastel-magenta-unpub: #ffeffa;
+   $saj-pastel-teal-unpub: #e5fbfc;
+   $saj-pastel-blue-unpub: #eff6ff;
+   $saj-pastel-yellow-unpub: #fefbeb;
+   $saj-pastel-pine-unpub: #f9fbe9;
+   $saj-pastel-green-unpub: #f2fde7;
+   $saj-pastel-violette-unpub: #fbefff;
+   

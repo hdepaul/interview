@@ -1,0 +1,134 @@
+@import "../../../variables.scss";
+
+.loading-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba($snag-gray-05, 0.4);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+    stroke: $snag-blurple-og;
+}
+
+::ng-deep .mat-card {
+    
+    text-align: left;
+    width: 90%;
+}
+
+::ng-deep .mat-grid-tile .mat-figure {
+     
+    display: inline-table !important;
+    width: 80%;
+
+    .material-icons.md-18 { font-size: 18px; }
+    .material-icons.md-24 { font-size: 24px; }
+    .material-icons.md-dark-blue { color:$snag-dark-blue }
+    .material-icons.md-light-gray { 
+        color: $snag-gray-50;
+        vertical-align: bottom;
+    }
+    
+    .access-time {
+        color: $snag-gray-50; 
+        margin-left: 2%;
+    }
+
+    .back {
+        margin-bottom: 5%;
+    } 
+    
+    .person-label {
+        color: $snag-gray-50;
+        margin-bottom: 2%;
+        font-size: 16px;
+    }
+
+    .duration-label {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10%;
+    }
+
+    .scheduled-container {
+        margin-top: 10%;
+        .scheduled-label {
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .scheduled-date-label {
+            color: $snag-gray-90; 
+            margin-left: 2%;
+        }
+    }
+    
+
+    .calendar-container {
+        .select-date-label {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+
+    .time-container {
+        margin-top: 50px;
+        margin-left: 30px;
+
+        .selected-date-label {
+            color: $snag-gray-50;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 3%;
+        }
+
+        .times-label {
+            border: 1.5px hidden;
+            box-shadow: none;
+            margin-bottom: 2%;
+            background-color: $snag-gray-10;
+            width: 193px;
+            text-align: center;
+            height: 18px;
+            vertical-align: middle;
+            padding: 10px;
+            color: $snag-gray-90
+        }
+
+        .times-card{
+            margin-bottom: 2%;
+            width: 178px;
+            text-align: center;
+            border: 1.5px solid $snag-gray-20;
+            box-shadow: none;
+            color: $snag-dark-blue !important;
+            font-weight: bold;
+            cursor: pointer;
+            
+            &.card-selected{
+                border: 2px solid;
+            }
+            
+            &:hover {
+                border: 2px solid; 
+            }
+
+        }
+
+        
+    }
+    
+}
+
+
+::ng-deep .mat-calendar-body-selected {
+    background-color: $snag-dark-blue;
+   
+}

@@ -1,0 +1,27 @@
+@import "../../../variables.scss";
+
+.footer {
+    background: $snag-blurple-og;
+    color: #FFF;
+    padding: 9px 16px;
+    box-sizing: border-box;
+    height: 120px;
+}
+
+.footer div {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    margin: 15px 10px;
+}
+
+.footer div a {
+    color: #FFF;
+}
+
+@media (max-width: $screen-sm-min) {
+    .footer div {
+       font-size: 10px;
+    }
+}

@@ -1,0 +1,2 @@
+site: dist
+s3_bucket: <%= ENV['S3_BUCKET'] %>
